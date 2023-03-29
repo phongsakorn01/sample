@@ -13,11 +13,7 @@ pipeline {
       
       
   }  }
-  stage('Archive Artifacts') { 
-    steps {
-      archiveArtifacts artifacts: 'C:\\*.jar' } 
-     }
-  }
+ 
   
     
  }
