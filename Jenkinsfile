@@ -15,7 +15,7 @@ pipeline {
   }  }
   stage('Archive Artifacts') { 
     steps {
-      archive includes: 'C:\\*.jar' } 
+      archiveArtifacts : 'C:\\*.jar' } 
      }
   }
   
