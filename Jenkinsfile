@@ -14,7 +14,7 @@ pipeline {
       bat 'dotnet build' 
       bat 'echo started'
       bat 'dotnet publish'
-  }  
+  }  }
   stage('Test') {  
     steps {  
       bat 'dotnet test' 
@@ -22,6 +22,7 @@ pipeline {
   }  
   }
   
+ 
   
-    }
+    
  }
