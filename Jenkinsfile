@@ -15,7 +15,7 @@ pipeline {
   }  }
   stage('Publish') {  
     steps {  
-      archiveArtifacts artifacts:'bin\\Debug\\net7.0\\publish\\*.zip' 
+      archiveArtifacts artifacts:'**/*.zip' 
    }  
   }  
   }
