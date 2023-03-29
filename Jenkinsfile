@@ -7,6 +7,7 @@ pipeline {
   stage('Build') {  
     steps {  
       bat 'dotnet build' 
+      bat 'echo started'
    }  
   }  
   stage('Test') {  
