@@ -15,7 +15,7 @@ pipeline {
   }  }
   stage('Publish') {  
     steps {  
-      archiveArtifacts artifacts:'C:\\ProgramData\\Jenkins\\.jenkins\\workspace\\testwin2\\bin\\Debug\\net7.0\\publish\\*.zip' 
+      archiveArtifacts artifacts:'bin\\Debug\\net7.0\\publish\\*.zip' 
    }  
   }  
   }
