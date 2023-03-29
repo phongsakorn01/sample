@@ -11,10 +11,11 @@ pipeline {
       bat 'echo started'
       bat 'dotnet publish'
       
+      
   }  }
-  stage('Test') {  
+  stage('Publish') {  
     steps {  
-      bat 'dotnet test' 
+      archiveArtifacts artifacts:'build/' 
    }  
   }  
   }
