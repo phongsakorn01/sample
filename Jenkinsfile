@@ -13,6 +13,9 @@ pipeline {
     steps {  
       bat 'dotnet build' 
       bat 'echo started'
+      bat 'echo publish'
+      post {                 
+       success { archiveArtifacts 'bin/Debug/netcoreapp2.0/publish/'}  }
    }  
   }  
   stage('Test') {  
