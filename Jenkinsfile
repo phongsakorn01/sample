@@ -13,11 +13,14 @@ pipeline {
       
       
   }  }
-  stage('Publish') {  
+  //stage('Publish') {  
+  post{
+   always{
     steps {  
       archiveArtifacts artifacts:'**/*.zip' 
    }  
   }  
+  }
   }
   
  
