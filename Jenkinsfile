@@ -13,18 +13,11 @@ pipeline {
       
       
   }  }
-  stage('Publish') {  
-  post{
-   always{
-    steps {  
-      archiveArtifacts artifacts:'**/*.zip' 
-    }
-   }  
-  }  
+  stage('Archive Artifacts') { 
+    steps {   // archive the artifacts                
+    archive includes: 'target/*.jar' } 
+     }
   }
-  }
-  
- 
   
     
  }
