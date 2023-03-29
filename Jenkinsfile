@@ -14,7 +14,7 @@ pipeline {
       
   }  }
   stage('Archive Artifacts') { 
-    steps {             
+    steps {
       archive includes: 'target/*.jar' } 
      }
   }
