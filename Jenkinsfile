@@ -20,9 +20,8 @@ pipeline {
       bat 'dotnet test' 
    }  
   }  
- 
+  }
   
- 
   
     }
  }
